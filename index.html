@@ -1,10 +1,16 @@
+<div id="toLoad">
+    <script type="text/javascript" src="jquery.js?ver=0.1"></script>
+    <script type="text/javascript" src="kidviolet.js?ver=0.1"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</div>
+
 <style type="text/css">
     body {
         margin: 0;
         padding: 0;
     }
 
-    #kidvioletBackground {
+    #Background {
         background-image: url("resources/BandPhoto.png");
         background-position: center;
         background-size: cover;
@@ -13,27 +19,33 @@
         height: 100vh;
     }
 
-    #kidvioletName {
-        background-image: url("resources/BandName.png");
-        background-position: center;
-        background-size: contain;
-        background-repeat: no-repeat;
+    #Name {
+        font-family: 'Raleway', sans-serif;
+        text-align: center;
+
         width: 300px;
         height: 300px;
         margin: auto;
         padding-top: 300px;
-        transform: rotate(6deg);
+        /*transform: rotate(6deg);*/
     }
 
-    #kidvioletSocial {
+    .Blend {
+        mix-blend-mode: exclusion;
+    }
+
+    #Social {
         width: 300px;
         margin: auto;
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
-    #soundcloud {
+    #SoundCloud {
         background-image: url("resources/badge/soundcloud.png");
+    }
+
+    .MediaLink {
         background-position: center;
         background-size: contain;
         background-repeat: no-repeat;
@@ -44,17 +56,9 @@
     }
 </style>
 
-<div id="scripts">
-    <script type="text/javascript" src="jquery.js?ver=0.1"></script>
-    <script type="text/javascript" src="kidviolet.js?ver=0.1"></script>
-</div>
-
-<div id="kidvioletBackground">
-    <div id="kidvioletName"></div>
-    <div id="kidvioletSocial">
-        <div id="soundcloud"></div>
-        <div id="soundcloud"></div>
-        <div id="soundcloud"></div>
-        <div id="soundcloud"></div>
+<div id="Background">
+    <div id="Name" class="Blend">KID VIOLET</div>
+    <div id="Social">
+        <div id="SoundCloud" class="MediaLink"></div>
     </div>
 </div>

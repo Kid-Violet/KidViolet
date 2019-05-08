@@ -24,6 +24,9 @@
         height: 300px;
         margin: auto;
         padding-top: 300px;
+
+        color: rgb(148,0,211);
+        opacity: 0.5;
     }
 
     #Name {
@@ -35,29 +38,33 @@
         height:100%;
         width:100%;
 
-        opacity: 0.5;
+        opacity:1;
 
-        color: rgb(148,0,211);
+        color: rgb(255,255,255);
         font-size: 5em;
         /*transform: rotate(6deg);*/
     }
 
     .Layer-1 {
+        display:none;
         z-index: 1;
         mix-blend-mode: color-burn;
     }
 
     .Layer-2 {
+        display:block;
         z-index: 2;
         mix-blend-mode: color-dodge;
     }
 
     .Layer-3 {
+        display:none;
         z-index: 3;
         mix-blend-mode: multiply;
     }
 
     .Layer-4 {
+        display:none;
         z-index: 4;
         mix-blend-mode: screen;
     }

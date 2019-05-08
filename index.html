@@ -21,7 +21,7 @@
     }
 
     #NameContainer {
-        width: 50%;
+        width: 75%;
         height: 300px;
         margin: auto;
         padding-top: 200px;
@@ -34,32 +34,45 @@
         font-family: 'Permanent Marker', cursive;
         text-align: center;
         font-weight: 900;
-        font-size: 10vw;
+        font-size: 18vw;
 
         transform: rotate(-8deg);
         mix-blend-mode: difference;
     }
 
     .White {
-        color: rgb(255,255,255);
+        color: rgba(255,255,255,0.3);
         z-index: 2;
     }
 
     .VioletOffset {
-        color: rgba(148,0,211,0.6);
-        margin-left: -10px;
-        margin-bottom: -5px;
+        color: rgba(148,0,211,0.7);
+        margin-left: -6px;
+        margin-bottom: -2px;
         z-index: 1;
     }
 
     #SocialContainer {
-        width: 300px;
-        margin: auto;
-        padding-top: 50px;
+        position: absolute;
+        bottom: 60px;
+        left: calc(50% - 180px);
+        width: 360px;
     }
 
-    #SoundCloud {
+    #Soundcloud {
         background-image: url("resources/badge/soundcloud.png");
+    }
+
+    #Facebook {
+        background-image: url("resources/badge/facebook.png");
+    }
+
+    #Spotify {
+        background-image: url("resources/badge/spotify.png");
+    }
+
+    #Twitter {
+        background-image: url("resources/badge/twitter.png");
     }
 
     .MediaLink {
@@ -72,6 +85,7 @@
         float: left;
         opacity: 0.5;
         transition: 0.3s;
+        margin: 15px;
     }
 
     .MediaLink:hover {
@@ -86,6 +100,9 @@
     </div>
 
     <div id="SocialContainer">
-        <div id="SoundCloud" class="MediaLink"></div>
+        <div id="Soundcloud" class="MediaLink"></div>
+        <div id="Spotify" class="MediaLink"></div>
+        <div id="Facebook" class="MediaLink"></div>
+        <div id="Twitter" class="MediaLink"></div>
     </div>
 </div>

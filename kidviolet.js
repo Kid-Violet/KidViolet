@@ -8,10 +8,10 @@ $(document).ready(function() {
     });
 
     $("#Facebook").on('click', function() {
-        window.open('https://soundcloud.com/kidviolet', '_blank');
+        window.open('https://www.facebook.com/Kid.Violet/', '_blank');
     });
 
-    $("#Twitter").on('click', function() {
-        window.open('https://soundcloud.com/kidviolet', '_blank');
+    $("#Instagram").on('click', function() {
+        window.open('https://www.instagram.com/kid.violet/', '_blank');
     });
 })

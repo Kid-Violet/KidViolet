@@ -20,24 +20,20 @@
         height: 100vh;
     }
 
-    #NameContainer {
-        width: 75%;
+    #KVContainer {
         height: 300px;
+        width: 300px;
         margin: auto;
         padding-top: 200px;
     }
 
-    #Name {
-        width: inherit;
-        position: absolute;
-
-        font-family: 'Permanent Marker', cursive;
-        text-align: center;
-        font-weight: 900;
-        font-size: 18vw;
-
-        transform: rotate(-8deg);
-        mix-blend-mode: difference;
+    #KV {
+        background-image: url("resources/400_KV.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 90%;
+        height: 90%;
     }
 
     .White {
@@ -71,8 +67,8 @@
         background-image: url("resources/badge/spotify.png");
     }
 
-    #Twitter {
-        background-image: url("resources/badge/twitter.png");
+    #Instagram {
+        background-image: url("resources/badge/instagram.png");
     }
 
     .MediaLink {
@@ -94,15 +90,14 @@
 </style>
 
 <div id="Background">
-    <div id="NameContainer">
-        <div id="Name" class="White">KID VIOLET</div>
-        <div id="Name" class="VioletOffset">KID VIOLET</div>
+    <div id="KVContainer">
+        <div id="KV"></div>
     </div>
 
     <div id="SocialContainer">
         <div id="Soundcloud" class="MediaLink"></div>
         <div id="Spotify" class="MediaLink"></div>
         <div id="Facebook" class="MediaLink"></div>
-        <div id="Twitter" class="MediaLink"></div>
+        <div id="Instagram" class="MediaLink"></div>
     </div>
 </div>

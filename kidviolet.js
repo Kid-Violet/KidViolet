@@ -3,10 +3,6 @@ $(document).ready(function() {
         window.open('https://soundcloud.com/kidviolet', '_blank');
     });
 
-    $("#Spotify").on('click', function() {
-        window.open('https://soundcloud.com/kidviolet', '_blank');
-    });
-
     $("#Facebook").on('click', function() {
         window.open('https://www.facebook.com/Kid.Violet/', '_blank');
     });

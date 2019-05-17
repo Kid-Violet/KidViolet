@@ -82,13 +82,30 @@
         height: 63px;
         cursor: pointer;
         float: left;
+        opacity: 1;
+        transition: 0.3s;
+        margin-left : 25px;
+        margin-right : 25px;
+    }
+    
+    .MediaLinkOff {
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 63px;
+        height: 63px;
+        cursor: pointer;
+        float: left;
         opacity: 0.5;
         transition: 0.3s;
-        margin: 25px;
+        margin-left : 25px;
+        margin-right : 25px;
     }
 
+
     .MediaLink:hover {
-        opacity: 1;
+        width: 70px;
+        height: 70px;
     }
 </style>
 
@@ -99,7 +116,7 @@
 
     <div id="SocialContainer">
         <div id="Soundcloud" class="MediaLink"></div>
-        <div id="Spotify" class="MediaLink"></div>
+        <div id="Spotify" class="MediaLinkOff"></div>
         <div id="Facebook" class="MediaLink"></div>
         <div id="Instagram" class="MediaLink"></div>
     </div>

@@ -14,4 +14,6 @@ $(document).ready(function() {
     $("#Instagram").on('click', function() {
         window.open('https://www.instagram.com/kid.violet/', '_blank');
     });
+	
+	
 })

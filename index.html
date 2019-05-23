@@ -42,7 +42,7 @@
 		padding: 15px;
 	}
 
-    #Background {
+    #/*Background {
         background-image: url("resources/Background.jpg");
         background-position: center;
         background-size: cover;
@@ -50,6 +50,13 @@
         width: 100vw;
         height: 1000px;
     }
+	/*
+	
+	.slideshow-container {
+		width: 100vw;
+        height: 800px;
+		position: center;
+	}
 
     #KVContainer {
         height: 430px;
@@ -144,11 +151,44 @@
     .MediaLink:hover {
         opacity: 1;
     }
+	
+	.active {
+		background-color: #000000;
+	}
+	
+	/* Fading animation */
+	.fade {
+		-webkit-animation-name: fade;
+		-webkit-animation-duration: 3.5s;
+		animation-name: fade;
+		animation-duration: 3.5s;
+	}
+	
+	@-webkit-keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
+
+	@keyframes fade {
+		from {opacity: .4} 
+		to {opacity: 1}
+	}
 </style>
 
 <title>Kid Violet</title>
 
-<div id="Background">
+<div class="Slides">
+  <img src="resources\Gallery\1.jpg">
+  <img src="resources\Gallery\2.jpg">
+  <img src="resources\Gallery\3.jpg">
+  <img src="resources\Gallery\4.jpg">
+  <img src="resources\Gallery\5.jpg">
+  <img src="resources\Gallery\6.jpg">
+  <img src="resources\Gallery\7.jpg">
+  <img src="resources\Gallery\8.jpg">
+  <img src="resources\Gallery\9.jpg">
+  <img src="resources\Gallery\10.jpg">
+  <img src="resources\Gallery\11.jpg">  
     <div id="KVContainer">
         <div id="KV"></div>
     </div>
@@ -182,7 +222,26 @@
   </div> 
 </div>
 
+<script>
+var slideIndex = 0;
+showSlides();
 
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("Slides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 7000); // Change image every 7 seconds
+}
+</script>
 
 
 

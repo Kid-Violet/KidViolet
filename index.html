@@ -148,15 +148,17 @@
 	.crossfade > figure {
 		animation: imageAnimation 30s linear infinite 0s;
 		backface-visibility: hidden;
-		background-size: cover;
-		background-position: center center;
+		background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
 		color: transparent;
 		height: 100%;
 		left: 0px;
 		opacity: 0;
 		position: absolute;
 		top: 0px;
-		width: 100%;
+		width: 100vw;
+        height: 1000px;
 		z-index: 0;
 }
 
@@ -191,7 +193,7 @@
 
 <title>Kid Violet</title>
 
-<div id="crossfade">
+<div class="crossfade">
   <figure></figure>
   <figure></figure>
   <figure></figure>
